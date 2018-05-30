@@ -1,0 +1,23 @@
+{
+  "id": "bdf8c21e-5ab9-4733-935e-54d32d5b1f5a",
+  "name": "Scenario5",
+  "publisher": "Student",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  }
+}
