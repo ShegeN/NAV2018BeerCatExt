@@ -8,8 +8,10 @@ page 50101 "BCA Beer Category List"
     {
         area(content)
         {
-            group(GroupName)
+            group(Beer_Category)
             {
+                Caption= 'Beer Category';
+                
                 field(Code;Code)
                 {
                     ApplicationArea=All;
