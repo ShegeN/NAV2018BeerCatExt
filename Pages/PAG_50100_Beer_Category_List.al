@@ -28,10 +28,37 @@ page 50101 "BCA Beer Category List"
     {
         area(processing)
         {
-            action(ActionName)
+            action(Export)
             {
+                Caption = 'Export';
+                ApplicationArea=All;
+                Promoted=true;
+                PromotedCategory=Process;
+                PromotedIsBig=true;
+                Image=Export;
+
                 trigger OnAction();
+                var
+                    BCASettingsMgt : Codeunit "BCA Settings Management";
                 begin
+                    BCASettingsMgt.ExportBeerCategories();
+                end;
+            }
+
+            action(Import)
+            {
+                Caption = 'Import';
+                ApplicationArea=All;
+                Promoted=true;
+                PromotedCategory=Process;
+                PromotedIsBig=true;
+                Image=Import;
+
+                trigger OnAction();
+                var
+                    BCASettingsMgt : Codeunit "BCA Settings Management";
+                begin
+                    BCASettingsMgt.ImportBeerCategories();
                 end;
             }
         }
