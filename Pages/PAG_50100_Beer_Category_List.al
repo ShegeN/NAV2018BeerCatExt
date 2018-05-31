@@ -27,15 +27,17 @@ page 50101 "BCA Beer Category List"
     actions
     {
         area(Processing)
-        {
+        {            
             action(Export)
             {
                 Caption = 'Export';
                 ApplicationArea=All;
+                Enabled = true; 
+                Visible = true;
+                Image=Export;
                 Promoted=true;
                 PromotedCategory=Process;
                 PromotedIsBig=true;
-                Image=Export;
 
                 trigger OnAction();
                 var
@@ -49,10 +51,13 @@ page 50101 "BCA Beer Category List"
             {
                 Caption = 'Import';
                 ApplicationArea=All;
+                Enabled = true; 
+                Visible = true;
+                Image=Import;
                 Promoted=true;
                 PromotedCategory=Process;
                 PromotedIsBig=true;
-                Image=Import;
+                InFooterBar = true;               
 
                 trigger OnAction();
                 var
