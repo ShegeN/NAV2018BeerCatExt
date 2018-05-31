@@ -26,7 +26,7 @@ page 50101 "BCA Beer Category List"
 
     actions
     {
-        area(processing)
+        area(Processing)
         {
             action(Export)
             {
